@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='hero'>Matt Silver</h1>
+      <video playsInline autoPlay loop id="myVideo">
+        <source src="/Smoke2.webm" type="video/webm" />
+        <source src="/Smoke2.mp4" type="video/mp4" />
+      </video>  
+      {/* <img src='/car.jpg'></img> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
