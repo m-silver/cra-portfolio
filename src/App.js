@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1 className='hero'>Matt Silver</h1>
-      <video playsInline autoPlay loop id="myVideo">
+      <video playsInline autoPlay muted loop id="myVideo">
         <source src="/Smoke2.webm" type="video/webm" />
         <source src="/Smoke2.mp4" type="video/mp4" />
       </video>  
