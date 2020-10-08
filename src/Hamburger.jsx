@@ -2,7 +2,7 @@ import React, { useState, useContext} from 'react'
 
 import { NavToggleContext } from './NavToggleContext'
 
-import './hamburger.css'
+import './styles/hamburger.css'
 
 export default function Hamburger () {
   const [navToggle, setNavToggle] = useContext(NavToggleContext)

@@ -1,5 +1,7 @@
 import React, { useContext } from 'react'
 
+import './styles/nav.css'
+
 import { NavToggleContext } from './NavToggleContext'
 
 export default function NavLinks () {
@@ -7,8 +9,9 @@ export default function NavLinks () {
   
   if (navToggle) { 
     return(
-      <div className='navLinks'>
+      <div className='flyoutMenu show'>
         <h1>About</h1>
+        <h1>Services</h1>
         <h1>Work</h1>
         <h1>Contact</h1>
       </div>

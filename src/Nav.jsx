@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import './styles/nav.css'
+
 import Hamburger from './Hamburger'
 import NavLinks from './NavLinks'
 
