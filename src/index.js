@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 
+import { NavToggleProvider } from './NavToggleContext'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <NavToggleProvider>
+      <App />
+    </NavToggleProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )
