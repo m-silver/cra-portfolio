@@ -27,18 +27,38 @@
   text-decoration: underline;
 }
 
-.flyoutMenu {
-  width: 350px;
+.flyoutMenu { /* https://www.kirupa.com/html5/creating_a_smooth_sliding_menu.htm */
+  width: 0px;
   height: 100vh;
   background-color: #FFE600;
   position: fixed;
   top: 0;
   right: 0;
-  transform: translate3d(100vw, 0, 0);
-  transition: transform .3s cubic-bezier(0, .52, 0, 1);
+  /* transform: translate3d(100vw, 0, 0);
+  transition: transform .3s cubic-bezier(0, .52, 0, 1); */
+  /* transition: width 5s; */
+  transition: width 0.5s;
   z-index: 1000;
+  overflow: scroll;
 }
 
 .flyoutMenu.show {
-  transform: translate3d(0vw, 0, 0);
+  /* transform: translate3d(0vw, 0, 0); */
+  width: 350px;
+}
+
+.flyoutMenuLinks {
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.flyoutMenuLinks h1:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+  .flyoutMenu.show {
+    width: 100vw;
+  }
 }
