@@ -17,7 +17,7 @@ body, html {
 .hero {
   position: absolute;
   opacity: 0;
-  font-size: 7rem;
+  font-size: 8rem;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -29,6 +29,17 @@ body, html {
 .hero.show {
   opacity: 1;
   transition: opacity 1s;
+}
+
+.bgHero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background: url('/pink-blue-bg.jpg') no-repeat center top;
+  background-size: cover;
 }
 
 #myVideo {

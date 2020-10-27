@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 
 import Nav from './Nav'
 import VideoHero from './VideoHero'
+import Hero from './Hero'
 import About from './About'
 import Services from './Services'
 import Work from './Work'
@@ -14,7 +15,8 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <VideoHero />
+      {/* <VideoHero /> */}
+      <Hero />
       <About />
       <Services />    
       <Work />  

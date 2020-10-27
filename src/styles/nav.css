@@ -49,7 +49,7 @@
   /* transition: width 5s; */
   transition: width 0.5s;
   z-index: 1000;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .flyoutMenu.show {
