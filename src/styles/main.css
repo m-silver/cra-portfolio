@@ -14,7 +14,7 @@ body, html {
   height: 100vh;
 }
 
-.hero {
+/* .hero {
   position: absolute;
   opacity: 0;
   font-size: 8rem;
@@ -24,7 +24,7 @@ body, html {
   color: white;
   text-align: center;
   transition: opacity 0.5s;
-}
+} */
 
 .hero.show {
   opacity: 1;
@@ -32,6 +32,10 @@ body, html {
 }
 
 .bgHero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -39,7 +43,11 @@ body, html {
   height: 100vh;
   width: 100vw;
   background: url('/pink-blue-bg.jpg') no-repeat center top;
+  /* background-color: #FFC501; */
   background-size: cover;
+  font-size: 4rem;
+  color: white;
+
 }
 
 #myVideo {
@@ -82,5 +90,21 @@ body, html {
 @media screen and (max-width: 1200px) {
   .content {
     padding: 75px;
+  }
+}
+
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
