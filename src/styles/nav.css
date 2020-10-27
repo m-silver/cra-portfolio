@@ -4,15 +4,25 @@
   top: 0;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 3rem;
   color: white;
   mix-blend-mode: difference;
   z-index: 1001;
 }
 
-.nav h1 {
-  padding-top: 0;
-  margin-top: 0;
+.nav-logo-container {
+  height: 50px;
+  width: 50px;
+
+  border: 2px solid white;
+}
+
+.nav-logo {
+  padding-top: 2px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .navLinks {

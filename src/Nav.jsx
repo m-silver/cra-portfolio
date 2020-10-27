@@ -9,7 +9,11 @@ export default function Nav () {
   return (
     <>
       <div className='nav'>
-        <h1>Si</h1>
+        <div className='nav-logo-container'>
+          <div className='nav-logo'>
+            Si
+          </div>
+        </div>
         <Hamburger />
       </div>
       <NavLinks />
