@@ -7,9 +7,9 @@ import { NavToggleProvider } from './NavToggleContext'
 
 ReactDOM.render(
   <React.StrictMode>
-    <NavToggleProvider>
-      <App />
-    </NavToggleProvider>
+      <NavToggleProvider>
+        <App />
+      </NavToggleProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

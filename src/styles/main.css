@@ -9,10 +9,16 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  overflow-x: hidden;
+
+}
+
 .app {
   width: 100vw;
   height: 100vh;
 }
+
 
 /* .hero {
   position: absolute;
@@ -26,23 +32,82 @@ body, html {
   transition: opacity 0.5s;
 } */
 
+
+/***** NEW HERO IMAGE BACKGROUND ***/
+
+.heroImage {
+  height: 100vh;
+  width: 100vw;
+  margin-top: -10rem;
+  background: url('/pink-blue-car.jpg') no-repeat center top;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-size: 4rem;
+  color: white;
+}
+
+.down-arrow {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: -3rem;
+  padding-bottom: 3rem;
+  padding-left: 10vw;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.down-arrow.show {
+  visibility: visible;
+}
+
+.right-arrow {
+  font-size: 30rem;
+  font-weight: bold;
+  padding-left: 10vw;
+  margin: -20rem 0 0 0;
+  height: 0px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.right-arrow.show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
+/******/
+
+.hero {
+  opacity: 0;
+  transition: opacity 0.5s;
+  margin: 0;
+  padding-left: 10rem;
+  margin-right: -10rem;
+}
+
 .hero.show {
   opacity: 1;
   transition: opacity 1s;
+
 }
 
 .bgHero {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
   height: 100vh;
   width: 100vw;
-  background: url('/pink-blue-bg.jpg') no-repeat center top;
+  background: url('/pink-blue-car.jpg') no-repeat center top;
   /* background-color: #FFC501; */
   background-size: cover;
   font-size: 4rem;
@@ -61,7 +126,24 @@ body, html {
 }
 
 .content {
-  padding: 150px 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10vw 20vw;;
+}
+
+.content-header {
+  color: black;
+}
+
+.content .left {
+  width: 50%;
+}
+
+.content .right {
+  text-align: right;
+  width: 50%;
 }
 
 .content h1 {
@@ -69,7 +151,7 @@ body, html {
 }
 
 .about {
-  margin-top: 100vh;
+  /* margin-top: 100vh; */
   background-color: white;
 }
 
@@ -107,4 +189,30 @@ body, html {
   100% {
     opacity: 0;
   }
+}
+
+.shape-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: #D0EEEC;
+  background-size: cover;
+  clip-path: polygon(0% 0%, 75% 0%, 25% 100%, 0% 100%); /* https://css-tricks.com/working-with-shapes-in-web-design/ */
+}
+
+.shape-bg2 {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -100vh;
+  background-color: #FDC7C5;
+  background-size: cover;
+  clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 25% 100%); /* https://css-tricks.com/working-with-shapes-in-web-design/ */
+}
+
+.clipped-image {
+  margin-top: 7rem;
+  clip-path: polygon(0% 25%, 25% 0%, 100% 0%, 100% 75%, 75% 100%, 0% 100%);
+}
+
+.left .clipped-image {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 25% 100%, 0% 75%);
 }

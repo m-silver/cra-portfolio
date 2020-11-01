@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 import './styles/nav.css'
 
@@ -9,7 +10,7 @@ export default function Nav () {
   return (
     <>
       <div className='nav'>
-        <div className='nav-logo-container'>
+        <div className='nav-logo-container' onClick={() => scroll.scrollToTop()}>
           <div className='nav-logo'>
             Si
           </div>

@@ -4,10 +4,12 @@ import React, { useState } from 'react'
 import Nav from './Nav'
 import VideoHero from './VideoHero'
 import Hero from './Hero'
+import HeroImage from './HeroImage'
 import About from './About'
 import Services from './Services'
 import Work from './Work'
 import Contact from './Contact'
+import ShapeBg from './ShapeBg'
 
 function App() {
 
@@ -16,11 +18,12 @@ function App() {
     <div className="App">
       <Nav />
       {/* <VideoHero /> */}
-      <Hero />
+      <HeroImage />
       <About />
       <Services />    
       <Work />  
       <Contact />
+      {/* <ShapeBg /> */}
     </div>
   )
 }
